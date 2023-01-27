@@ -1,1 +1,4 @@
 Logs/*
+obj/*
+Temp/*
+.vscode/*
