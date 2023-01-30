@@ -19,13 +19,10 @@ public class BallMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        rb.velocity = -1*rb.velocity;
-        Debug.Log("Collision Ball");
-    }
-
-    void OnTriggerEnter(Collider col)
-    {
-        Debug.Log("help");
+        Vector2 norm = col.contacts[col.contactCount/2].normal;
+        float dot = Vector2.Dot(rb.velocity, norm.normalized);
+        if (dot < 0)
+            rb.velocity = rb.velocity - 2*(dot)*norm.normalized;
     }
 
     // Update is called once per frame

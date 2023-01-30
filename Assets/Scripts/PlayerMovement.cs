@@ -7,17 +7,17 @@ public class PlayerMovement : MonoBehaviour
 
     private float speed = 10f;
     Rigidbody2D rb; 
-    CapsuleCollider2D collider;
+    // CapsuleCollider2D collider;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        collider = GetComponent<CapsuleCollider2D>();
+        // collider = GetComponent<CapsuleCollider2D>();
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log("Collision Player");
+        
     }
 
     // Update is called once per frame
