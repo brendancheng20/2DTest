@@ -1,5 +1,5 @@
 Logs/*
 obj/*
 Temp/*
-.vscode/*
-Library/**
+.vscode
+Library/
