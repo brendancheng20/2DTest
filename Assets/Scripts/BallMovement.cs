@@ -12,9 +12,10 @@ public class BallMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         System.Random rnd = new System.Random();
-        float x = rnd.Next(0,5);
-        float y = rnd.Next(0,5);
+        float x = rnd.Next(1,5);
+        float y = rnd.Next(1,5);
         rb.velocity = new Vector2(x,y);
+        rb.velocity = 10*rb.velocity.normalized;
     }
 
     void OnCollisionEnter2D(Collision2D col)

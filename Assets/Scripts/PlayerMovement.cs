@@ -23,10 +23,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float xMove = Input.GetAxisRaw("Horizontal"); // d key changes value to 1, a key changes value to -1
+        // float xMove = Input.GetAxisRaw("Horizontal"); // d key changes value to 1, a key changes value to -1
         float zMove = Input.GetAxisRaw("Vertical"); // w key changes value to 1, s key changes value to -1
 
-        Vector2 vector2 = new Vector2(xMove, zMove) * speed;
+        Vector2 vector2 = new Vector2(0, zMove) * speed;
         rb.velocity = vector2; // Creates velocity in direction of value equal to keypress (WASD).
     }
 }
