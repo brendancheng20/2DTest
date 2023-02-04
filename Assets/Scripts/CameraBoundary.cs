@@ -45,7 +45,7 @@ public class CameraBoundary : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        
+        Debug.Log(col.gameObject);
     }
 
     void Update()
