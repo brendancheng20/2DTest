@@ -36,10 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Buttons\LaunchGame.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\BallMovement.cs" />
      <Compile Include="Assets\Scripts\CameraBoundary.cs" />
-     <Compile Include="Assets\Scripts\Buttons\LaunchGame.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.26f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
